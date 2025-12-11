@@ -1,0 +1,841 @@
+ @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+    @import url(https://db.onlinewebfonts.com/c/1d7251d7d54f1da0d2dca782c34d7890?family=Apple+Braille);
+
+    @font-face {
+    font-family: "Apple Braille";
+    src: url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.eot");
+    src: url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.svg#Apple Braille")format("svg");
+}
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: #EDE0F4;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    
+
+    #wrap {
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    p{
+        font-family: Helvetica, Arial, sans-serif;
+        /* font-family: "Apple Braille"; */
+        font-weight: 300;
+    }
+
+    .lap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+
+    header li{
+        list-style-type: none;
+    }
+
+
+    .head-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #B650F0;
+        padding: 0.16vw;
+    }
+
+    .head-top p {
+        position: relative;
+        right: 44.2vw;
+        top: 0.2vw;
+        font-size: 2vw;
+        color: #FCFF55;
+    }
+
+    .head-top img {
+        width: 5vw;
+        position: relative;
+        left: 1.7vw;
+        top: 0.2vw;
+    }
+
+
+    .head-middle {
+        background-color: #ededed;
+        height: 3.4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0vw 0.1vw 0.4vw rgba(30, 30, 30, 0.168);
+    }
+
+    .head-middle .button {
+        display: flex;
+        position: relative;
+        right: 30.73vw;
+    }
+
+    .head-middle .button-red {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FE5F58;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-yellow {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FEBC30;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-green {
+        width: 1vw;
+        height: 1vw;
+        background-color: #29C840;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+      .head-middle p {
+        font-size: 1.3vw;
+        color: #4C4C4C;
+        border: 0.15vw solid #c3c3c3b4;
+        border-radius: 0.6vw;
+        width: 30vw;
+        height: 2.6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.4vw 8vw 0.4vw 8vw; */
+        /* 위  오  아 왼*/
+    }
+
+    .logo {
+        width: 14vw;
+        padding: 3vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .line {
+        border: 0.01vw solid #B650F0;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.95vw;
+    }
+
+    /* 전체 헤더 컨테이너를 Flexbox로 설정 */
+    .main-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3vw;
+        position: relative;
+        left: 32vw;
+        bottom: 5.15vw;
+    }
+
+    .left-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+    .right-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+    }
+
+    .middle-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+
+    .left-group ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-group li {
+        margin-bottom: 0.3vw;
+        text-align: center;
+    }
+
+
+    .main-header a {
+        display: block;
+        text-decoration: none;
+        color: #B650F0;
+        font-size: 1vw;
+        padding-top: 1vw;
+        border-top: 0.26vw solid #B650F0;
+        width: 100%;
+    }
+
+
+
+    .left-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+    .middle-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .right-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .left-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #B650F0;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .middle-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #B650F0;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .right-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #B650F0;
+        transform: rotate(15deg);
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .logo,
+    .line,
+    .main-header {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+
+    /* --- 새로 추가된 기능용 CSS --- */
+header {
+    position: fixed; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* .menu-trigger {
+    z-index: 20;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #B650F0; 
+    cursor: pointer;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+} */
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* --- [수정된 버전] 기능 구현 CSS --- */
+.logo, .line, .main-header {
+    opacity: 1;
+    transform: none;
+}
+
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+
+
+header.hide {
+    transform: translateY(-150%);
+}
+
+header.active {
+    background-color: #da9dfd58; 
+    backdrop-filter: blur(0.4vw); /* 👈 블러 효과 추가 (픽셀값 조절 가능) */
+    -webkit-backdrop-filter: blur(0.4vw); /* 👈 사파리 브라우저 호환용 */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+/* --- [추가] 메뉴 열렸을 때 내부 요소 색상 변경 --- */
+
+
+header.active .main-header a {
+    color: #B650F0;     
+    border-top-color: #B650F0 ; /* 메뉴 위 얇은 선도 보라색으로 */
+    transition: color 0.5s, border-color 0.5s; /* 색깔 부드럽게 바뀌게 */
+}
+
+
+header.active .line {
+    border-color: #B650F0;
+    transition: border-color 0.5s;
+}
+
+/* 3. 작은 장식 선들 (.line-1) 배경색 변경 */
+header.active .line-1 {
+    background-color: #B650F0;
+    transition: background-color 0.5s;
+    position: relative;
+    right: 0.2vw;
+}
+
+
+.menu-trigger {
+    position: fixed;
+    top: 8.5vw;
+    right: 1vw;
+    z-index: 100;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #B650F0;
+    padding: 0.6vw 1.5vw;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+}
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-trigger:hover {
+    font-size: 1.7vw;
+}
+
+
+.friends-container {
+        display: flex;
+        /* justify-content: center; */
+        /* 중앙 정렬 */
+        align-items: center;
+        align-items: flex-end;
+        height: 4vw;
+        width: 9vw;
+        /* height: 100vw; */
+        /* 화면 중앙에 보려고 넣은 거라 나중에 빼도 돼 */
+        /* background-color: black; */
+        /* border: 1px solid red; */
+        /* GIF처럼 배경 검게 */
+        margin-bottom: 5vw;
+        position: relative;
+        left: 4vw;
+        top: 2vw;
+    }
+
+    /* 공통 이미지 스타일 */
+    .letter {
+        /* width: 60px; */
+        /* 이미지 크기는 네 디자인에 맞춰 조절해 */
+        height: auto;
+        margin: 0 0.1vw;
+        /* 글자 사이 간격 살짝 */
+
+        /* 애니메이션 적용: 이름(bounce) 시간(1.5초) 무한반복(infinite) 부드럽게(ease-in-out) */
+        animation: bounce 1.6s infinite ease-in-out;
+    }
+
+    /* 움직임 정의 (위아래 둥둥) */
+    @keyframes bounce {
+
+        0%,
+        30% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-1.3vw);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+    }
+
+    /* 핵심! 글자마다 박자가 늦게 시작하게 설정 (Wave 효과) */
+    /* nth-child(숫자)는 n번째 이미지를 뜻해 */
+
+    .letter:nth-child(1) {
+        animation-delay: 0s;
+        width: 1vw;
+    }
+
+    /* F */
+    .letter:nth-child(2) {
+        animation-delay: 0.1s;
+        width: 0.8vw;
+    }
+
+    /* r */
+    .letter:nth-child(3) {
+        animation-delay: 0.2s;
+        width: 0.58vw;
+    }
+
+    /* i */
+    .letter:nth-child(4) {
+        animation-delay: 0.3s;
+        width: 1.09vw;
+    }
+
+    /* e */
+    .letter:nth-child(5) {
+        animation-delay: 0.4s;
+        width: 1.19vw;
+    }
+
+    /* n */
+    .letter:nth-child(6) {
+        animation-delay: 0.5s;
+        width: 1.2vw;
+    }
+
+    /* d */
+    .letter:nth-child(7) {
+        animation-delay: 0.6s;
+        width: 1.1vw;
+    }
+
+    /* s */
+    .letter:nth-child(8) {
+        animation-delay: 0.7s;
+        width: 0.7vw;
+    }
+
+
+    
+
+.main{
+    width: 100vw;
+    min-height: 10vw;
+    position: relative;
+    top: 27vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid red; */
+    padding-top: 14vw;
+}
+
+.main .home-txt{
+    width: 94vw;
+    z-index: 3;
+    position: absolute;
+    bottom: 40vw;
+    /* border: 1px solid red; */
+}
+
+.main .home-bg-1{
+    width: 100%;
+    z-index: 1;
+}
+
+.main .home-bg-2{
+    width: 99%;
+    position: absolute;
+    /* bottom: 50.5vw; */
+    /* right: 2.1vw; */
+    left: 1.3vw;
+    top: 15vw;
+    /* border: 1px solid red; */
+    z-index: 5;
+}
+
+
+.section-1{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vw;
+    /* border: 1px solid red; */
+    padding: 5vw 0vw 5vw 0vw;
+    /* 위  오  아 왼*/
+    position: relative;
+    top: 40vw;
+    /* margin: 5vw; */
+
+}
+
+.section-1 .sof{
+    width: 42vw;
+    position: relative;
+    right: 3vw;
+    top: 2vw;
+}
+
+.section-1 .section-1-txt img{
+    width: 18vw;
+    margin-bottom: 0vw;
+}
+
+.section-1 .section-1-txt p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    width: 47vw;
+    /* border: 1px solid red; */
+    color: #B650F0;
+}
+
+
+.section-2{
+    width: 100vw;
+    position: relative;
+    top: 60vw;
+    /* padding: 0vw; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.section-2 .section-2-top img{
+    width: 41vw;
+    position: relative;
+    right: 27.5vw;
+    bottom: 0.4vw;
+    display: block;
+    /* border: 1px solid red; */
+}
+
+.section-2-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    /* right: 1.5vw; */
+    /* bottom: 0.3vw; */
+    /* border: 1px solid red; */
+}
+
+.section-2-bottom .section-2-bt-txt{
+    width: 30vw;
+    height: 40vw;
+    background-color: #B650F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4F4;
+    padding: 2vw;
+    margin: 0.5vw;
+}
+
+.section-2-bottom .section-2-bt-txt p{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.section-2-bottom img:nth-child(2){
+    width: 27vw;
+    margin: 0.5vw;
+}
+
+.section-2-bottom img:nth-child(3){
+    width: 37vw;
+    margin: 0.5vw;
+    position: relative;
+    bottom: 15vw;
+}
+
+
+
+.section-3{
+    width: 100vw;
+    min-height: 70vw;
+    /* border: 2px solid rgb(13, 0, 255); */
+    position: relative;
+    top: 76vw;
+}
+
+
+.section-3 .keyword{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-3 .keyword img{
+    width: 80%;
+    /* border-bottom: 0.6vw solid #B650F0; */
+    display: inline-block;
+    padding: 0;
+}
+
+.keyword-item:nth-child(2) img {
+    position: relative;
+    left: 20vw;
+}
+
+.keyword-item:nth-child(3) img {
+    position: relative;
+    right: 5vw;
+}
+
+.keyword-item:nth-child(4) img {
+    position: relative;
+    left: 15vw;
+}
+
+/* 각 이미지를 감싼 span이 기준점 */
+/* 개별 아이템(줄) 설정 */
+.keyword-item {
+    position: relative;
+    display: flex; /* 내부 이미지를 정렬하기 위해 flex 사용 */
+    width: 100%;   /* 화면 가로 꽉 채우기 */
+    padding-bottom: 0vw; /* 줄과 이미지 사이 간격 */
+    margin-bottom: 2vw;
+}
+
+/* 보라색 긴 밑줄 - 이제 화면 꽉 차게 나옴 */
+.keyword-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* 200% 필요 없음, 100%면 충분 */
+    height: 1.5vw;
+    background-color: #B650F0;
+    z-index: 1;
+}
+
+.section-3 .coffee{
+    width: 20vw;
+    /* position: absolute;
+    top: 5vw;
+    left: 78vw; */
+    position: relative;
+    left: 75vw;
+    top: 18vw;
+    z-index: 2;
+}
+
+.section-3 .duck{
+    width: 8vw;
+    /* position: absolute;
+    top: 21vw;
+    left: 8vw; */
+    position: relative;
+    top: 36vw;
+    right: 10vw;
+    z-index: 2;
+}
+
+.section-3 .chicken{
+    width: 8vw;
+    z-index: 2;
+    /* position: absolute;
+    top: 69vw;
+    left: 15vw; */
+    position: relative;
+    top: 83vw;
+    right: 10vw;
+}
+
+.section-3 .friends-mini{
+    width: 23vw;
+    /* position: absolute;
+    top: 51vw;
+    left: 77vw; */
+    z-index: 2;
+    position: relative;
+    top: 61vw;
+    left: 49vw;
+}
+
+
+.section-4{
+    width: 100vw;
+    min-height: 50vw;
+    /* border: 5px solid green; */
+    padding: 2vw;
+    /* padding-top: 80vw; */
+    margin-top: 110vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .left img{
+    width: 46vw;
+    margin: 0.5vw;
+    position: relative;
+    /* bottom: 2vw; */
+    top: 5.5vw;
+    /* opacity: 1; */
+}
+
+.section-4 .right{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+    margin: 0.5vw;
+}
+
+.section-4 .right img{
+    width: 48vw;
+    /* margin-bottom: 2vw; */
+}
+
+.section-4 p{
+    font-size: 1.6vw;
+    width: 30vw;
+    margin-bottom: 2vw;
+    color: #B650F0;
+    position: relative;
+    top: 2vw;
+    left: 1vw;
+}
+
+.section-4 h2{
+    font-size: 2.9vw;
+    color: #B650F0;
+    position: relative;
+    top: 2vw;
+    left: 1vw;
+}
+
+
+footer{
+    width: 100vw;
+    min-height: 36vw;
+    background-color: #B650F0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin-top: 30vw;
+    color: #EDE0F4;
+}
+
+footer img{
+    width: 16vw;
+    margin-bottom: 1vw;
+    position: relative;
+    right: 34vw;
+}
+
+footer .footer-line{
+    width: 92%;
+    border: 0.09vw solid #EDE0F4;
+    margin-bottom: 1vw;
+}
+
+footer .nav{
+    display: flex;
+}
+
+footer .nav ul{
+    display: flex;
+}
+
+footer .nav ul:nth-child(1){
+    position: relative;
+    right: 19vw;
+}
+
+footer .nav ul:nth-child(2){
+    position: relative;
+    left: 15vw;
+}
+
+footer .nav li{
+    list-style: none;
+    margin: 1vw;
+}
+
+
+footer .nav li a{
+    color: #EDE0F4;
+    font-size: 1.7vw;
+}
+
+
+footer p{
+    color: #EDE0F4;
+    font-size: 1.3vw;
+    width: 66vw;
+    position: relative;
+    right: 8.4vw;
+    top: 2vw;
+}
